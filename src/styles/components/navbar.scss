@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98vw;
+  padding-top: 1rem;
+}
+
+.navbar_logo {
+  height: 6rem;
+  margin-left: 3rem;
+}
+
+.mode_logo {
+  height: 3rem;
+  width: 3rem;
+  padding-right: 4rem;
+  padding-bottom: 2.4rem;
+  :hover {
+    color: #fc7a24;
+    cursor: pointer;
+  }
+}
+
+.sun {
+  opacity: 1;
+}

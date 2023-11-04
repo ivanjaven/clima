@@ -1,0 +1,52 @@
+.weatherbox {
+  height: 40rem;
+  width: 48rem;
+  background-image: url("../../img/Good\ Weather\ Afternoon.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 3rem 3rem 3rem 6rem;
+  border-radius: 3rem;
+  color: #1a2842;
+  // color: #fefefe;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+
+    &--logo {
+      color: #fc7a24;
+      background-color: white;
+      border-radius: 40%;
+      padding: 1rem;
+      margin: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &--title {
+      h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1.8rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.current_temp {
+  // margin: 3rem;
+  margin: 3rem;
+  margin-top: 2rem;
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.currentweather {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.weatherbox {
+}
+
+.weatherdetail {
+}
+
+.weekforecast {
+  grid-column: 3 / 4;
+  grid-row: -3/-1;
+}
+
+.hourlyforecast {
+  grid-column: 1 / 3;
+  grid-row: -2/-3;
+}

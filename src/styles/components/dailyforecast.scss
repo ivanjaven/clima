@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  height: 5.6rem;
+  width: 28rem;
+  margin-bottom: 1.8rem;
+  background-color: #c8e1cb;
+  border: solid 0.2 #1a2842;
+  border-radius: 2rem;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.data {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+
+  &_all {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  &_forecast {
+    display: flex;
+    margin-top: -1rem;
+    transform: translateX(-0.2rem);
+
+    &--precipitation,
+    &--temperature {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+    }
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    // color: $color-logo;
+  }
+}
+
+.dropdown_logo {
+  margin-top: 0.8rem;
+  position: absolute;
+  color: #a0a0a0;
+  left: 25rem;
+
+  :hover {
+    cursor: pointer;
+    color: #1a2842;
+  }
+}
+
+.weather_logo {
+  height: 4rem;
+  color: $color-logo;
+}
+
+.icon-container {
+  height: 4rem;
+  width: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url("../../img/icon-Clear\ Morning.gif");
+}

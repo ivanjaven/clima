@@ -1,0 +1,21 @@
+.weekforecast {
+  padding-left: 3rem;
+  height: 80vh;
+  width: 22vw;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  background-color: #aad3c5;
+  border-radius: 3rem;
+  overflow: hidden;
+
+  &_header {
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+  }
+}

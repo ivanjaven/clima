@@ -1,0 +1,19 @@
+.weatherdetailbox {
+  margin: 6rem 2rem 3rem 2rem;
+  width: 40rem;
+  color: #1a2842;
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.detail_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.logo {
+  padding: 6px;
+  color: $color-logo;
+}
