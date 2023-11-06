@@ -5,6 +5,7 @@ import NavBar from "./components/navbar";
 import WeatherBox from "./components/weatherbox";
 import WeatherDetail from "./components/weatherdetailbox";
 import WeekForecast from "./components/weekforecast";
+
 import Loading from "./components/loading";
 
 import { getWeatherForecast } from "./utils/weather";
@@ -12,11 +13,13 @@ import "./styles/main.scss";
 // import WeatherDataContainer from "./components/weatherdatacontainer/weatherdatacontainer";
 
 function App() {
-  const apiKey = "9c59f50cdcd3420b87f04537230111";
-  const place = "malolos,bulacan,philipines";
-  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${place}&days=8&aqi=yes&alerts=yes`;
+  const handleSearch = (query) => {
+    console.log(`Searching for: ${query}`);
+    // Implement your search logic here
+  };
 
   const [currentData, setCurrentData] = useState(null);
+  const [searchData, setSearchData] = useState(null);
 
   useEffect(() => {
     const fetchDataAndSetForecast = async () => {
@@ -37,7 +40,6 @@ function App() {
 
   return current ? (
     <>
-      {/* <div className="container"> */}
       <NavBar />
       <div className="currentweather">
         {current && (
@@ -54,8 +56,6 @@ function App() {
         />
         <WeekForecast className="weekforecast" props={forecast} />
       </div>
-      {/* <WeatherDataContainer /> */}
-      {/* </div> */}
     </>
   ) : (
     <Loading size={"10rem"} />

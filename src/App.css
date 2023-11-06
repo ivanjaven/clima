@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
 }
 
-.weatherbox {
+/* .weatherbox {
 }
 
 .weatherdetail {
@@ -18,4 +18,4 @@
 .hourlyforecast {
   grid-column: 1 / 3;
   grid-row: -2/-3;
-}
+} */

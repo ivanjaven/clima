@@ -1,16 +1,19 @@
 import { CiTempHigh, CiUmbrella } from "react-icons/ci";
 import { IoIosArrowDropdown } from "react-icons/io";
-// import ;
+import { getIconForWeatherForecast } from "../utils/config";
 import { convertUnixTimeToFormattedDate } from "../utils/dateTime";
 
 const DailyForecast = (forecast, key) => {
   const forecastToday = forecast.props;
-  const backgroundImage = "../img/icon-Clear Morning.gif";
+  const icon = getIconForWeatherForecast[forecastToday.day.condition.text];
+
+  const backgroundImage = require(`../img/icon-${icon}.gif`);
+
   return (
     <div className="container">
       <div className="data">
         <div className="icon-container">
-          <img src={require("../img/icon-Cloudy Night.gif")} />
+          <img src={backgroundImage} />
         </div>
         <div className="data_all">
           <div className="data_date">

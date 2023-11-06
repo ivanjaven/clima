@@ -1,0 +1,32 @@
+.input_field {
+  height: 2.8rem;
+  width: 34rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  border: 1.4px solid #aad3c5;
+  transform: translateX(-1rem);
+  text-indent: 1.4rem;
+
+  &::placeholder {
+    text-indent: 1.4rem;
+  }
+
+  input {
+  }
+}
+
+.search_button {
+  height: 3.3rem;
+  width: 6rem;
+  font-size: 1.2rem;
+  border-radius: 3rem;
+  border: 1.4px solid #aad3c5;
+  transform: translate(-5rem, 3px);
+  background-color: #aad3c5;
+  color: #1a2842;
+
+  &-icon {
+    margin-top: 2px;
+  }
+}
