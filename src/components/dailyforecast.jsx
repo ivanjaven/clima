@@ -1,52 +1,16 @@
-import { useState } from "react";
-import { SunCloud } from "../img/Rain Cloud Icon.gif";
 import { CiTempHigh, CiUmbrella } from "react-icons/ci";
 import { IoIosArrowDropdown } from "react-icons/io";
+// import ;
+import { convertUnixTimeToFormattedDate } from "../utils/dateTime";
 
-const DailyForecast = (forecast) => {
-  function convertUnixTimeToFormattedDate(unixTimestamp) {
-    // Convert Unix timestamp to milliseconds
-    const date = new Date(unixTimestamp * 1000);
-
-    const days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-
-    const day = days[date.getDay()];
-    const dayNumber = date.getDate();
-    const month = months[date.getMonth()];
-
-    const formattedDate = `${day}, ${month} ${dayNumber} `;
-
-    return formattedDate;
-  }
-
+const DailyForecast = (forecast, key) => {
   const forecastToday = forecast.props;
+  const backgroundImage = "../img/icon-Clear Morning.gif";
   return (
     <div className="container">
       <div className="data">
         <div className="icon-container">
-          {/* <img src={require("../img/icon-Cloudy Night.gif")} /> */}
+          <img src={require("../img/icon-Cloudy Night.gif")} />
         </div>
         <div className="data_all">
           <div className="data_date">

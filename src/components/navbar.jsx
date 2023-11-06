@@ -1,5 +1,3 @@
-import { useState } from "react";
-// import "./navbar.scss";
 import ClimaLogo from "../img/Clima Light Mode Logo.png";
 import { GoSun } from "react-icons/go";
 

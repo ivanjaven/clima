@@ -1,6 +1,4 @@
-import { useState } from "react";
 import WeatherDetail from "./weatherdetail";
-// import "./weatherdetailbox.scss";
 import { CiTempHigh } from "react-icons/ci";
 import { LiaTemperatureLowSolid } from "react-icons/lia";
 import { AiOutlineCloud } from "react-icons/ai";

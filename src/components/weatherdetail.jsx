@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { CiTempHigh } from "react-icons/ci";
-// import "./weatherdetail.scss";
 
 const WeatherDetail = ({ imageSource, data, description }) => {
   return (

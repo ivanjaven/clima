@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  height: 5.6rem;
-  width: 28rem;
+  height: 6.4vh;
+  width: 20vw;
   margin-bottom: 1.8rem;
   background-color: #c8e1cb;
   border: solid 0.2 #1a2842;
@@ -51,7 +51,7 @@
   margin-top: 0.8rem;
   position: absolute;
   color: #a0a0a0;
-  left: 25rem;
+  right: 3rem;
 
   :hover {
     cursor: pointer;
@@ -69,6 +69,5 @@
   width: 4rem;
   background-size: cover;
   background-repeat: no-repeat;
-
-  background-image: url("../../img/icon-Clear\ Morning.gif");
+  // background-image: url("../../img/icon-Clear\ Morning.gif");
 }

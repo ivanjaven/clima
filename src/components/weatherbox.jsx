@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { useEffect } from "react";
-// import "./weatherbox.scss";
 import { IoIosPartlySunny } from "react-icons/io";
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";

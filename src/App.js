@@ -5,8 +5,9 @@ import NavBar from "./components/navbar";
 import WeatherBox from "./components/weatherbox";
 import WeatherDetail from "./components/weatherdetailbox";
 import WeekForecast from "./components/weekforecast";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { IoReloadCircle } from "react-icons/io5";
+import Loading from "./components/loading";
+
+import { getWeatherForecast } from "./utils/weather";
 import "./styles/main.scss";
 // import WeatherDataContainer from "./components/weatherdatacontainer/weatherdatacontainer";
 
@@ -18,21 +19,16 @@ function App() {
   const [currentData, setCurrentData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchDataAndSetForecast = async () => {
       try {
-        const response = await fetch(url);
-        if (response.ok) {
-          const data = await response.json();
-          setCurrentData(data);
-        } else {
-          console.error("Failed to fetch weather data");
-        }
+        const data = await getWeatherForecast("malolos,bulacan"); // Call the async function and await the result
+        setCurrentData(data);
       } catch (error) {
-        console.error("An error occurred while fetching weather data:", error);
+        console.error("Error fetching data:", error);
       }
     };
 
-    fetchData();
+    fetchDataAndSetForecast();
   }, []);
 
   const { current } = currentData || "";
@@ -55,16 +51,14 @@ function App() {
           className="weatherdetail"
           current={current}
           forecast={forecast}
-          // forecast={forecast}
         />
         <WeekForecast className="weekforecast" props={forecast} />
-        {/* <HourlyForecast className="hourlyforecast" /> */}
       </div>
       {/* <WeatherDataContainer /> */}
       {/* </div> */}
     </>
   ) : (
-    <AiOutlineLoading3Quarters size={"10rem"} />
+    <Loading size={"10rem"} />
   );
 }
 
