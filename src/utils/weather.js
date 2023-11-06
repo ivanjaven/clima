@@ -12,10 +12,8 @@ const getWeatherForecast = async (place) => {
       console.error("Failed to fetch weather data");
     }
   } catch (error) {
-    console.error("An error occurred while fetching weather data:", error);
+    console.error("An error occurred while fetching data:", error);
   }
 };
-
-// const
 
 export { getWeatherForecast };
