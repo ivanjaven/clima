@@ -2,10 +2,7 @@ import DailyForecast from "./dailyforecast";
 
 const WeekForecast = (forecast) => {
   const weekForecast = forecast.props.forecastday;
-  const handleSearch = (query) => {
-    console.log(`Searching for: ${query}`);
-    // Implement your search logic here
-  };
+
   return (
     <div className="weekforecast_container">
       <div className="weekforecast">
