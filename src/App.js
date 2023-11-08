@@ -9,6 +9,8 @@ import WeekForecast from "./components/weekforecast";
 import Loading from "./components/loading";
 
 import { getWeatherForecast } from "./utils/weather";
+import { getUserLocation } from "./utils/location";
+
 import "./styles/main.scss";
 // import WeatherDataContainer from "./components/weatherdatacontainer/weatherdatacontainer";
 
@@ -23,8 +25,10 @@ function App() {
 
   useEffect(() => {
     const fetchDataAndSetForecast = async () => {
+      const location = getUserLocation();
+      const coordinates = await location;
       try {
-        const data = await getWeatherForecast("canada"); // Call the async function and await the result
+        const data = await getWeatherForecast(coordinates); // Call the async function and await the result
         setCurrentData(data);
       } catch (error) {
         console.error("Error fetching data:", error);
