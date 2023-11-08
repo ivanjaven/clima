@@ -1,6 +1,4 @@
-import { IoIosPartlySunny } from "react-icons/io";
-
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { BiSolidMap } from "react-icons/bi";
 
 const WeatherBox = ({ current, location }) => {
   return (
@@ -8,11 +6,14 @@ const WeatherBox = ({ current, location }) => {
       <div className="weatherbox">
         <div className="weatherbox_header">
           <div className="weatherbox_header--logo">
-            <IoIosPartlySunny size="2.8rem" />
+            <img src={current.condition.icon} />
           </div>
           <div className="weatherbox_header--title">
             <h1>Weather Today</h1>
-            <p>{`${location.name}, ${location.region}`}</p>
+            <div className="location">
+              <BiSolidMap className="map-logo" size={"2rem"} />
+              <p>{`${location.name}, ${location.region}`}</p>
+            </div>
           </div>
         </div>
         <div className="current_temp">

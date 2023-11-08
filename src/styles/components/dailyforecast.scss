@@ -65,7 +65,15 @@
 }
 
 .icon-container {
-  height: 4rem;
-  width: 4rem;
-  transform: translateY(-5px);
+  height: 3rem;
+  width: 3rem;
+  padding-right: 1.2rem;
+
+  img {
+    height: 4.6rem;
+  }
+}
+
+.bounce {
+  animation: bounce 3s infinite;
 }

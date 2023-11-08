@@ -13,7 +13,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
+    <div className="search_container">
       <input
         className="input_field"
         type="text"

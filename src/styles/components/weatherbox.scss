@@ -16,10 +16,8 @@
 
     &--logo {
       color: #fc7a24;
-      background-color: white;
-      border-radius: 40%;
-      padding: 1rem;
-      margin: 3rem;
+      border-radius: 50%;
+      margin: 2rem;
       margin-bottom: 2rem;
     }
 
@@ -32,12 +30,21 @@
         font-size: 1.8rem;
         margin-top: 0;
       }
+      .location {
+        display: flex;
+        margin-top: 3px;
+
+        .map-logo {
+          color: #1a2842;
+          transform: translateY(3px);
+          margin-right: 6px;
+        }
+      }
     }
   }
 }
 
 .current_temp {
-  // margin: 3rem;
   margin: 3rem;
   margin-top: 2rem;
   h1 {

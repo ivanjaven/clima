@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const fetchDataAndSetForecast = async () => {
       try {
-        const data = await getWeatherForecast("malolos,bulacan"); // Call the async function and await the result
+        const data = await getWeatherForecast("canada"); // Call the async function and await the result
         setCurrentData(data);
       } catch (error) {
         console.error("Error fetching data:", error);
