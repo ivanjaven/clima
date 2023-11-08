@@ -6,11 +6,7 @@ import { BsWind, BsEyeglasses, BsSunrise, BsSunset } from "react-icons/bs";
 import { IoUmbrellaOutline } from "react-icons/io5";
 import { SearchBar } from "./searchbar";
 
-const WeatherDetailBox = ({ current, forecast }) => {
-  const handleSearch = (query) => {
-    console.log(`Searching for: ${query}`);
-    // Implement your search logic here
-  };
+const WeatherDetailBox = ({ current, forecast, handleSearch }) => {
   const currentWeather = current;
   const currentForecast = forecast.forecastday[0].day;
   const currentForecastAstro = forecast.forecastday[0].astro;

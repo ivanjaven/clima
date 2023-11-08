@@ -3,13 +3,18 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
-
   const handleSearch = () => {
     onSearch(searchQuery);
   };
 
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
   };
 
   return (
@@ -20,6 +25,7 @@ function SearchBar({ onSearch }) {
         placeholder="Search..."
         value={searchQuery}
         onChange={handleInputChange}
+        onKeyUp={handleKeyPress}
       />
       <button className="search_button" onClick={handleSearch}>
         <AiOutlineSearch className="search_button-icon" size={"1.8rem"} />

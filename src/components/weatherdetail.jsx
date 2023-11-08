@@ -3,8 +3,6 @@ import { CiTempHigh } from "react-icons/ci";
 const WeatherDetail = ({ imageSource, data, description }) => {
   return (
     <div className="weatherdetail">
-      {/* <img className="logo" src={require("../../img/temperature.png")} />
-       */}
       <div>{imageSource}</div>
       <div className="weatherdetail_description">
         <h1>{`${data}`}</h1>
