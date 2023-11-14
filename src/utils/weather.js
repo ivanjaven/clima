@@ -1,5 +1,5 @@
 const getWeatherForecast = async (place) => {
-  const apiKey = "9c59f50cdcd3420b87f04537230111";
+  const apiKey = "0468f914918545e58c9110231231411";
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${place}&days=8&aqi=yes&alerts=yes`;
 
   try {
