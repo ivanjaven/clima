@@ -18,9 +18,9 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="flex ml-4 translate-y-4">
+    <div className="flex mr-3 translate-y-4 sm:justify-center xl:mx-3">
       <input
-        className="flex rounded-3xl border-solid border-2 border-primary-color h-9 w-80 indent-4 translate-x-7 focus:border-secondary-color"
+        className="flex rounded-3xl border-solid border-2 border-primary-color h-9 w-80 indent-4 translate-x-7 focus:border-secondary-color "
         type="text"
         placeholder="Search..."
         value={searchQuery}

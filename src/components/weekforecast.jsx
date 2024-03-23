@@ -7,7 +7,7 @@ const WeekForecast = (forecast) => {
   return (
     <Accordion
       collapseAll
-      className=" lg:ml-5 md:mx-2 mt-4 border-none lg:translate-x-72 xl:translate-x-0"
+      className=" w-12/12 mx-5 mb-4 translate-x-7 md:mx-6 mt-4 border-none lg:translate-x-72 xl:translate-x-0"
     >
       <Accordion.Panel>
         <div className=" bg-primary-color p-8 pl-5 pr-5 rounded-3xl w-11/12">

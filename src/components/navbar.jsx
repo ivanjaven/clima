@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="navbar flex justify-between">
       <img
-        className="navbar_logo max-h-16 mx-8 my-4 flex-shrink-0"
+        className="max-h-14 mx-4 my-2 flex-shrink-0 sm:max-h-16 sm:mx-6 sm:mt-4 xl:max-h-20"
         src={ClimaLogo}
         alt="Clima Logo"
       />

@@ -13,47 +13,49 @@ const WeatherDetailBox = ({ current, forecast, handleSearch }) => {
   return (
     <div>
       <SearchBar onSearch={handleSearch} />
-      <h1 className=" text-xl font-medium pb-5 mt-10 ml-10">Weather Details</h1>
-      <div className=" grid grid-cols-2 ml-10">
+      <h1 className=" text-xl font-medium pb-5 mt-10 mx-5 sm:mx-14 md:mx-32 md:text-2xl lg:mx-6 xl:mx-12">
+        Weather Details
+      </h1>
+      <div className=" grid grid-cols-2 mx-10 sm:mx-28 md:mx-48 md:gap-x-28 lg:mx-12 xl:gap-x-12">
         <WeatherDetail
-          imageSource={<CiTempHigh className="logo" size={30} />}
+          imageSource={<CiTempHigh size={30} />}
           data={currentWeather ? `${currentWeather.temp_c}° ` : " "}
           description={"Temperature"}
         />
         <WeatherDetail
-          imageSource={<LiaTemperatureLowSolid className="logo" size={30} />}
+          imageSource={<LiaTemperatureLowSolid size={30} />}
           data={currentWeather ? `${currentWeather.feelslike_c}°` : " "}
           description={"Feels like"}
         />
         <WeatherDetail
-          imageSource={<AiOutlineCloud className="logo" size={30} />}
+          imageSource={<AiOutlineCloud size={30} />}
           data={currentWeather ? `${currentWeather.cloud} %` : " "}
           description={"Cloud cover"}
         />
         <WeatherDetail
-          imageSource={<IoUmbrellaOutline className="logo" size={30} />}
+          imageSource={<IoUmbrellaOutline size={30} />}
           data={
             currentWeather ? `${currentForecast.daily_chance_of_rain}%` : " "
           }
           description={"Chance"}
         />
         <WeatherDetail
-          imageSource={<BsWind className="logo" size={30} />}
+          imageSource={<BsWind size={30} />}
           data={currentWeather ? `${currentWeather.wind_kph} km/h` : " "}
           description={"Wind speed"}
         />
         <WeatherDetail
-          imageSource={<BsEyeglasses className="logo" size={30} />}
+          imageSource={<BsEyeglasses size={30} />}
           data={currentWeather ? `${currentWeather.uv}` : " "}
           description={"UV index"}
         />
         <WeatherDetail
-          imageSource={<BsSunrise className="logo" size={30} />}
+          imageSource={<BsSunrise size={30} />}
           data={currentWeather ? `${currentForecastAstro.sunrise}` : " "}
           description={"Sunrise"}
         />
         <WeatherDetail
-          imageSource={<BsSunset className="logo" size={30} />}
+          imageSource={<BsSunset size={30} />}
           data={currentWeather ? `${currentForecastAstro.sunset}` : " "}
           description={"Sunset"}
         />
