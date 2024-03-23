@@ -3,10 +3,14 @@ import { GoSun } from "react-icons/go";
 
 const NavBar = () => {
   return (
-    <div className="navbar">
-      <img className="navbar_logo" src={ClimaLogo} alt="Clima Logo" />
-      <div className="mode_logo">
-        <GoSun className="sun" size="2.8rem" />
+    <div className="navbar flex justify-between">
+      <img
+        className="navbar_logo max-h-16 mx-8 my-4 flex-shrink-0"
+        src={ClimaLogo}
+        alt="Clima Logo"
+      />
+      <div className="mode_logo content-center my-4 flex-shrink-0 mx-10">
+        <GoSun className="sun" size="30" />
       </div>
     </div>
   );

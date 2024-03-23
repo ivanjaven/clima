@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./input.css";
 import "./App.css";
 import NavBar from "./components/navbar";
 import WeatherBox from "./components/weatherbox";
@@ -7,7 +8,8 @@ import WeekForecast from "./components/weekforecast";
 import Loading from "./components/loading";
 import { getWeatherForecast } from "./utils/weather";
 import { getUserLocation, getLocationReccomendations } from "./utils/location";
-import "./styles/main.scss";
+
+// import "./styles/main.scss";
 
 function App() {
   const [currentData, setCurrentData] = useState(null);

@@ -18,17 +18,20 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="search_container">
+    <div className="flex ml-4 translate-y-4">
       <input
-        className="input_field"
+        className="flex rounded-3xl border-solid border-2 border-primary-color h-9 w-80 indent-4 translate-x-7"
         type="text"
         placeholder="Search..."
         value={searchQuery}
         onChange={handleInputChange}
         onKeyUp={handleKeyPress}
       />
-      <button className="search_button" onClick={handleSearch}>
-        <AiOutlineSearch className="search_button-icon" size={"1.8rem"} />
+      <button onClick={handleSearch}>
+        <AiOutlineSearch
+          className=" border border-solid rounded-full h-9 pl-6 p-1.5 w-20 bg-primary-color"
+          size={"1.8rem"}
+        />
       </button>
     </div>
   );

@@ -4,6 +4,10 @@
   grid-template-rows: 1fr;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 /* .weatherbox {
 }
 
