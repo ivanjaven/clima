@@ -14,10 +14,10 @@ const DailyForecast = (forecast) => {
       className=" mt-3 rounded-xl bg-secondary-color border-none"
     >
       <Accordion.Panel>
-        <Accordion.Title className=" hover:bg-hover-color rounded-xl text-font-color">
+        <Accordion.Title className=" hover:bg-hover-color rounded-xl text-font-color h-14">
           <div className="flex text-font-color">
             <div>
-              <img className=" size-11 mr-2 animate-bounce" src={icon} />
+              <img className=" size-10 mr-3 animate-bounce" src={icon} />
             </div>
             <div>
               <div className="text-sm font-bold">
@@ -27,12 +27,12 @@ const DailyForecast = (forecast) => {
               </div>
               <div className=" flex mt-0">
                 <div className=" flex mt-0">
-                  <CiUmbrella className=" mr-1" size="1.4rem" />
-                  <p className=" text-sm">{`${forecastToday.day.daily_chance_of_rain}%`}</p>
+                  <CiUmbrella className=" mr-1" size="1.3rem" />
+                  <p className=" text-xs">{`${forecastToday.day.daily_chance_of_rain}%`}</p>
                 </div>
                 <div className="flex mt-0">
-                  <CiTempHigh className="mr-1" size="1.4rem" />
-                  <p className="text-sm">{`${forecastToday.day.avgtemp_c}°C`}</p>
+                  <CiTempHigh className="mr-1" size="1.3rem" />
+                  <p className=" text-xs">{`${forecastToday.day.avgtemp_c}°C`}</p>
                 </div>
               </div>
             </div>

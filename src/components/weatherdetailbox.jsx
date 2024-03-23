@@ -13,8 +13,8 @@ const WeatherDetailBox = ({ current, forecast, handleSearch }) => {
   return (
     <div>
       <SearchBar onSearch={handleSearch} />
-      <h1 className=" text-xl font-medium pb-5 mt-10 ">Weather Details</h1>
-      <div className=" grid grid-cols-2">
+      <h1 className=" text-xl font-medium pb-5 mt-10 ml-10">Weather Details</h1>
+      <div className=" grid grid-cols-2 ml-10">
         <WeatherDetail
           imageSource={<CiTempHigh className="logo" size={30} />}
           data={currentWeather ? `${currentWeather.temp_c}° ` : " "}

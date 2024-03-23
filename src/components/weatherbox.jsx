@@ -3,7 +3,7 @@ import { BiSolidMap } from "react-icons/bi";
 const WeatherBox = ({ current, location }) => {
   return (
     <>
-      <div className="bg-cover bg-center bg-morning bg-no-repeat h-screen max-h-96 w-420 mx-14 my-6 rounded-3xl">
+      <div className="bg-cover bg-center bg-morning bg-no-repeat h-screen max-h-96 w-420 lg:mx-14 my-6 rounded-3xl pt-5">
         <div className="weatherbox_header flex my-10">
           <div className="weatherbox_header--logo mx-4 my-2">
             <img src={current.condition.icon} />

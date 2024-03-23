@@ -65,14 +65,8 @@ function App() {
   return current ? (
     <>
       <NavBar />
-      <div className="currentweather">
-        {current && (
-          <WeatherBox
-            className="weatherbox"
-            current={current}
-            location={location}
-          />
-        )}
+      <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 md:flex md:flex-col md:justify-center md:align-middle">
+        {current && <WeatherBox current={current} location={location} />}
         <WeatherDetail
           current={current}
           forecast={forecast}
