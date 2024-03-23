@@ -22,7 +22,7 @@ module.exports = {
         "primary-color": "#aad3c5",
         "secondary-color": "#c8e1cb",
         "font-color": "##1a2842",
-        "hover-color": "#c8e1af",
+        "hover-color": "#c8e1c0",
       },
     },
   },

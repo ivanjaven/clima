@@ -58,12 +58,11 @@ function App() {
           />
         )}
         <WeatherDetail
-          className="weatherdetail"
           current={current}
           forecast={forecast}
           handleSearch={handleSearch}
         />
-        <WeekForecast className="weekforecast" props={forecast} />
+        <WeekForecast props={forecast} />
       </div>
     </>
   ) : (
