@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         morning: "url('/src/img/Good Weather Afternoon.gif')",
+        sun: "url('/src/img/icon-Clear Morning.gif')",
       },
       width: {
         420: "420px",
