@@ -1,5 +1,3 @@
-import { CiTempHigh } from "react-icons/ci";
-
 const WeatherDetail = ({ imageSource, data, description }) => {
   return (
     <div className=" flex flex-row align-middle mt-3 ml-0 mb-6 mr-0">

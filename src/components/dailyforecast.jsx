@@ -1,48 +1,12 @@
 import { CiTempHigh, CiUmbrella } from "react-icons/ci";
-import { IoIosArrowDropdown } from "react-icons/io";
-import { getIconForWeatherForecast } from "../utils/config";
 import { convertUnixTimeToFormattedDate } from "../utils/dateTime";
-import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 import { Accordion } from "flowbite-react";
 import WeatherDetail from "./weatherdetail";
-import { LiaTemperatureLowSolid } from "react-icons/lia";
-import { AiOutlineCloud } from "react-icons/ai";
 import { BsWind, BsEyeglasses, BsSunrise, BsSunset } from "react-icons/bs";
-import { IoUmbrellaOutline } from "react-icons/io5";
-import { SearchBar } from "./searchbar";
 
-const DailyForecast = (forecast, key) => {
+const DailyForecast = (forecast) => {
   const forecastToday = forecast.props;
-  console.log(forecastToday);
   const icon = forecastToday.day.condition.icon;
-
-  // return (
-  //   <div className=" max-h-14 max-w-80 bg-secondary-color border-solid border border-font-color align-middle p-4">
-  //     <div className="flex pl-12">
-  // <div className="icon-container bounce">
-  //   <img src={icon} />
-  // </div>
-  // <div className="flex flex-col ml-12 mr-32 mb-0">
-  //   <div className="data_date">
-  //     <h1>{convertUnixTimeToFormattedDate(forecastToday.date_epoch)}</h1>
-  //   </div>
-  //   <div className="data_forecast">
-  //     <div className="data_forecast--precipitation">
-  //       <CiUmbrella className="weather_logo" size="1.8rem" />
-  //       <p>{`${forecastToday.day.daily_chance_of_rain}%`}</p>
-  //     </div>
-  //     <div className="data_forecast--temperature">
-  //       <CiTempHigh className="weather_logo" size="2rem" />
-  //       <p>{`${forecastToday.day.avgtemp_c}°C`}</p>
-  //     </div>
-  //   </div>
-  // </div>
-  //       <div className="dropdown_logo">
-  //         <IoIosArrowDropdown size="2rem" />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 
   return (
     <Accordion
