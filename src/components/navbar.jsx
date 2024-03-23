@@ -9,9 +9,6 @@ const NavBar = () => {
         src={ClimaLogo}
         alt="Clima Logo"
       />
-      <div className="mode_logo content-center my-4 flex-shrink-0 mx-10">
-        <GoSun className="sun" size="30" />
-      </div>
     </div>
   );
 };

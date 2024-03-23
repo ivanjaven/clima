@@ -32,8 +32,24 @@ function App() {
   const handleSearch = (query) => {
     const fetchDataAndSetForecast = async () => {
       try {
-        const data = await getWeatherForecast(query); // Call the async function and await the result
-        setCurrentData(data);
+        const timeoutPromise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            reject(
+              new Error("Timeout: The request took too long to complete.")
+            );
+          }, 10000); // 5 seconds timeout
+        });
+
+        const dataPromise = getWeatherForecast(query);
+
+        // Wait for either the data or the timeout promise to resolve
+        const data = await Promise.race([dataPromise, timeoutPromise]);
+
+        if (data) {
+          setCurrentData(data);
+        } else {
+          console.error("Place does not exist or could not be found.");
+        }
       } catch (error) {
         console.error("Error fetching data:", error);
       }

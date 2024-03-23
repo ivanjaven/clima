@@ -17,21 +17,21 @@ const DailyForecast = (forecast) => {
         <Accordion.Title className=" hover:bg-hover-color rounded-xl text-font-color">
           <div className="flex text-font-color">
             <div>
-              <img className=" size-14 mr-4" src={icon} />
+              <img className=" size-11 mr-2 animate-bounce" src={icon} />
             </div>
             <div>
-              <div className="text-md font-bold">
+              <div className="text-sm font-bold">
                 <h1>
                   {convertUnixTimeToFormattedDate(forecastToday.date_epoch)}
                 </h1>
               </div>
               <div className=" flex mt-0">
                 <div className=" flex mt-0">
-                  <CiUmbrella className=" mr-1" size="1.8rem" />
+                  <CiUmbrella className=" mr-1" size="1.4rem" />
                   <p className=" text-sm">{`${forecastToday.day.daily_chance_of_rain}%`}</p>
                 </div>
                 <div className="flex mt-0">
-                  <CiTempHigh className="mr-1" size="1.8rem" />
+                  <CiTempHigh className="mr-1" size="1.4rem" />
                   <p className="text-sm">{`${forecastToday.day.avgtemp_c}°C`}</p>
                 </div>
               </div>
