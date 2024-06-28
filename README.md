@@ -2,7 +2,7 @@
 
 A sleek and simple weather application built with React and Tailwind CSS, utilizing the WeatherAPI for fetching weather data.
 
-## Installation
+### Installation
 
 To set up the project on your local machine for development and testing purposes, follow these steps:
 
@@ -13,7 +13,7 @@ Ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v14 or later)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Installation
+## Installation
 
 1. **Clone the repository:**
 
@@ -24,21 +24,21 @@ Ensure you have the following installed:
 
 2. **Install dependencies:**
 Using npm:
-```bash
-   npm install
-```
+   ```bash
+      npm install
+   ```
 Using yarn:
-```bash
-   yarn build
-```
+   ```bash
+      yarn build
+   ```
 
 2. **Set up environment variables:**
 Create an .env.local file in the root of the project and add your WeatherAPI key:
-```plaintext
-  REACT_APP_API_KEY=your_api_key_here
-```
+   ```plaintext
+     REACT_APP_API_KEY=your_api_key_here
+   ```
 
-### Running the App
+## Running the App
 
 To start the development server, run:
 Using npm:
@@ -50,7 +50,7 @@ Using yarn:
    yarn start
    ```
 
-### Deployment
+## Deployment
 
 To create a production build, run:
 Using npm:
