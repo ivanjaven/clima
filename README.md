@@ -36,6 +36,7 @@ Ensure you have the following installed:
       ```
 
 2. **Set up environment variables:**
+   
    Create an .env.local file in the root of the project and add your WeatherAPI key:
    
       ```plaintext
