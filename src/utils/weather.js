@@ -1,5 +1,5 @@
 const getWeatherForecast = async (place) => {
-  const apiKey = "576b1ca007f142228ba60734242303 ";
+  const apiKey = process.env.REACT_APP_API_KEY;
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${place}&days=8&aqi=yes&alerts=yes`;
 
   try {

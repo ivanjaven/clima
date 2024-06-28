@@ -9,8 +9,6 @@ import Loading from "./components/loading";
 import { getWeatherForecast } from "./utils/weather";
 import { getUserLocation, getLocationReccomendations } from "./utils/location";
 
-// import "./styles/main.scss";
-
 function App() {
   const [currentData, setCurrentData] = useState(null);
 
