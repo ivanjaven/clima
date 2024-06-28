@@ -23,6 +23,7 @@ Ensure you have the following installed:
    ```
 
 2. **Install dependencies:**
+   
    Using npm:
    
       ```bash
@@ -36,6 +37,7 @@ Ensure you have the following installed:
 
 2. **Set up environment variables:**
    Create an .env.local file in the root of the project and add your WeatherAPI key:
+   
       ```plaintext
         REACT_APP_API_KEY=your_api_key_here
       ```
@@ -43,30 +45,31 @@ Ensure you have the following installed:
 ## Running the App
 
 To start the development server, run:
-Using npm:
 
+   Using npm:
+   
       ```bash
-      npm start
+         npm start
       ```
-Using yarn:
-
+   Using yarn:
+   
       ```bash
-      yarn start
+         yarn start
       ```
 
 ## Deployment
 
 To create a production build, run:
- Using npm:
- 
+
+   Using npm:
+   
       ```bash
-      npm run build
+         npm run build
       ```
-      
    Using yarn:
    
       ```bash
-      yarn build
+         yarn build
       ```
       
    ---
