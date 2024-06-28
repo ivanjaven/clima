@@ -42,12 +42,14 @@ Ensure you have the following installed:
 
 ## Running the App
 
-   To start the development server, run:
-   Using npm:
+To start the development server, run:
+Using npm:
+
       ```bash
       npm start
       ```
-   Using yarn:
+Using yarn:
+
       ```bash
       yarn start
       ```
@@ -55,14 +57,18 @@ Ensure you have the following installed:
 ## Deployment
 
 To create a production build, run:
-   Using npm:
+ Using npm:
+ 
       ```bash
       npm run build
       ```
+      
    Using yarn:
+   
       ```bash
       yarn build
       ```
+      
    ---
 
 Feel free to explore and contribute to this project!
